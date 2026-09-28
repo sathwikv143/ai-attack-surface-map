@@ -1,12 +1,12 @@
-# AI Attack & Defence Map
+# AI Attack Surface Map
 
 An open educational map of **AI / LLM attacks and the controls that blunt them**, organized by lifecycle stage.
 
-Browse it like [OSINT Framework](https://osintframework.com/): expand a stage, open an attack, read how it works, then the paired defences. Every attack also has a short path animation through a stage-specific stack (training pipeline, RAG, agents, …).
+Browse it like [OSINT Framework](https://osintframework.com/): expand a stage, open an attack, read how it works, then the paired defenses. Every attack also has a short path animation through a stage-specific stack (training pipeline, RAG, agents, …).
 
 No accounts. No backend. Static HTML/CSS/JS + [D3](https://d3js.org/) from a CDN. Content lives in one file: `[data/tree.json](data/tree.json)`.
 
-This is **defence-oriented education** — high-level mechanisms and mitigations, not exploit recipes or payloads.
+This is **defense-oriented education** — high-level mechanisms and mitigations, not exploit recipes or payloads.
 
 ## Demo
 
@@ -26,8 +26,8 @@ This is **defence-oriented education** — high-level mechanisms and mitigations
 |                     |                                                      |
 | ------------------- | ---------------------------------------------------- |
 | **58 attacks**      | Across 7 lifecycle stages                            |
-| **~174 defences**   | Grouped under each attack                            |
-| **Path animations** | Attack (red) + Defences (green) for every attack     |
+| **~174 defenses**   | Grouped under each attack                            |
+| **Path animations** | Attack (red) + defenses (green) for every attack     |
 | **Resources**       | Optional papers, tools, standards on leaves          |
 | **Crosswalk**       | OWASP / ATLAS chips where tagged                     |
 | **Glossary**        | Hover shortforms (RLHF, LoRA, RAG, …) for expansions |
@@ -67,10 +67,10 @@ Open [http://localhost:8080](http://localhost:8080).
 
 ## How to use the UI
 
-1. **Tree** (default) — click a blue **stage**, then a red **attack**. Click **Attack** or a defence for the note (How / Impact / Resources). Drag to pan, scroll to zoom. **Fit** clears pan/zoom; **Reset** returns to Training.
+1. **Tree** (default) — click a blue **stage**, then a red **attack**. Click **Attack** or a defense for the note (How / Impact / Resources). Drag to pan, scroll to zoom. **Fit** clears pan/zoom; **Reset** returns to Training.
 2. **Stages** — same content as columns; pick an attack to read the note on the right.
 3. **Search** — type to jump (`/` focuses the box). Matches names, tags, and resource titles.
-4. **Animate attack / Animate defences** — on an attack note, walk the path through the stack. Click a component to inspect that step; multiple controls on one box show as bullets.
+4. **Animate attack / Animate defenses** — on an attack note, walk the path through the stack. Click a component to inspect that step; multiple controls on one box show as bullets.
 5. **Help** — short coach / how-to drawer.
 
 Tablets are usable (pinch-zoom tree, Stages view). Phones work but the horizontal tree is cramped — a tighter mobile layout is planned later.
@@ -81,7 +81,7 @@ Tablets are usable (pinch-zoom tree, Stages view). Phones work but the horizonta
 index.html          App shell
 css/                Layout, tree, path overlay
 js/                 Tree, Stages, search, animate, glossary
-data/tree.json      All attacks, defences, links, animate data
+data/tree.json      All attacks, defenses, links, animate data
 assets/usage.mov    Short UI walkthrough (linked above)
 ```
 
